@@ -25,6 +25,7 @@ body {
   /* Solution */
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 8px;
 }
@@ -63,6 +64,8 @@ ul {
 
   /* Solution */
   display: flex;
+  margin: 0px;
+  padding: 0px;
   align-items: center;
   gap: 16px;
 
@@ -72,17 +75,8 @@ ul {
 
 /* Solution */
 
-.left-side{
-  display: flex;
-  gap: 16px;
-
-
-}
-
+.left-side,
 .right-side{
-
   display: flex;
-  margin-left: auto;
   gap: 16px;
-
 }
