@@ -1,3 +1,11 @@
+/* *,
+*::after,
+*::before{
+  border: 1px solid blueviolet;
+  margin: 2px;
+  padding: 0px;
+} */
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -10,6 +18,11 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+
+  /* Solution */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 
 /* do not edit this footer */
@@ -23,4 +36,27 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+/* Solution */
+
+.content-info{
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.text{
+  text-align: center;
+  text-wrap: wrap;
 }
