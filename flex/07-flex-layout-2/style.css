@@ -38,7 +38,14 @@ body {
 
 /* Solution */
 
+body{
+  /* CORRECT */
+  display: flex;
+  flex-direction: column;
+}
+
 .header{
+  /* CORRECT */
 
   display: flex;
   
@@ -47,61 +54,90 @@ body {
 
   align-items: center;
 
+  
+  /* padding: 0 16px; */
   padding-left: 16px;
 
 
 }
 
-body{
-  display: flex;
-  flex-direction: column;
-}
 
 .content{
+  /* EQUIVALENT TO CLASS=BODDY */
+  /* CORRECT */
   display: flex;
   flex: 1
 }
 
 .cards-box{
+  /* EQUIVALENT TO CLASS=CONTAINER */
+  /* CORRECT */
+  
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
   gap: 20px;
+  /* gap: 32px */
   padding: 50px;
+  /* padding: 48px */
+
+  
 }
 
 .card{
+  /* NOT CORRECT */
+  padding: 16px;
+  width: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  /* flex-basis: 300px; */
 
-  display: flex;
-  flex: 1 0 initial;
-  max-width: 300px;
-  max-height: 300px;
-  padding: 48px;
+  /* display: flex; */
+  /* flex: 1; */
+  /* max-width: 300px; */
+  /* max-height: 300px; */
+  /* padding: 48px; */
 }
 
 .sidebar{
-  display: flex;
-  min-width: 300px;
-  flex: 0 0 0;
-  padding-right: 16px;
+  /* NOT CORRECT */
+
+  
+  /* display: flex; */
+  /* min-width: 300px; */
+  /* flex: 0 0 0; */
+
+  flex-shrink: 0;
+  padding: 16px;
   
 
 }
 
 ul{
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  font-size: 24px;
+  /* NOT CORERCT */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 16px; */
+
+  /* font-size: 24px; */
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a{
   text-decoration: none;
-  color: white
+  color: white;
+  font-size: 24px;
+}
+
+li{
+  /* MISSING */
+  margin-bottom: 16px;
 }
 
 .footer{
+  /* CORRECT */
   display: flex;
   justify-content: center;
   align-items: center;
